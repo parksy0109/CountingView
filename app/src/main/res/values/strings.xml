@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CountingView</string>
+    <string name="app_name">카운트기</string>
     <string name="str_zero" translatable="false">0</string>
     <string name="initialize">초기화</string>
     <string name="str_counting">카운팅</string>
