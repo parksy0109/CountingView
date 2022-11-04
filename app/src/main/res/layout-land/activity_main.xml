@@ -5,52 +5,64 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:id="@+id/rl_initialize"
+        <LinearLayout
+            android:id="@+id/ll_top_button"
+            android:weightSum="2"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="60sp"
-            android:background="@drawable/ripple_initialize_background"
-            android:clickable="true"
-            android:focusable="true">
+            android:layout_height="wrap_content">
 
-            <TextView
-                style="@style/shadow_font"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:clickable="false"
-                android:focusable="false"
-                android:gravity="center"
-                android:text="@string/initialize"
-                android:textColor="#FAF9F9" />
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_counting"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_below="@id/rl_initialize"
-            android:background="@drawable/ripple_counting_background"
-            android:layout_width="match_parent"
-            android:layout_height="60sp">
-
-            <TextView
-                style="@style/shadow_font"
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/rl_initialize"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text="@string/str_counting"
-                android:textColor="#FAF9F9" />
+                android:background="@drawable/ripple_initialize_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/shadow_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/initialize"
+                    android:textColor="#FAF9F9" />
 
 
-        </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/rl_counting"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_counting_background"
+                android:layout_width="0dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    style="@style/shadow_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/str_counting"
+                    android:textColor="#FAF9F9" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
 
         <View
+
             android:id="@+id/view_first_line"
-            android:layout_below="@id/rl_counting"
+            android:layout_below="@id/ll_top_button"
             android:background="#B9B9B9"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>

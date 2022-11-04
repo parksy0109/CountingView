@@ -14,7 +14,7 @@ class CounterViewModel: ViewModel() {
     var increaseSpeed: Long = 1000
 
     init {
-        _currentCount.value = 1988
+        _currentCount.value = 0
     }
 
     fun increaseCount() {
