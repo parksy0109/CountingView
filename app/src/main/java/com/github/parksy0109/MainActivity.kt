@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         counterViewModel.currentCount.observe(this) {
             if(it == CounterViewModel.MAX_VALUE) {
-                Toast.makeText(this, "카운터 최대 값에 도달했습니다",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.reach_max_value_message),Toast.LENGTH_SHORT).show()
             }
             val toNumberData = it.toNumberData()
             binding.tvThousands.text = toNumberData.thousands.toString()

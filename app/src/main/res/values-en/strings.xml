@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CountingView</string>
+    <string name="initialize">Initialization</string>
+    <string name="str_counting">Counting</string>
+    <string name="str_input">Input</string>
+    <string name="str_speed_ms">Speed(ms)</string>
+    <string name="reach_max_value_message">Maximum value reached</string>
+</resources>

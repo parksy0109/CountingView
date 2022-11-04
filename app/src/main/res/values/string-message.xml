@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reach_max_value_message">카운터 최대 값에 도달했습니다</string>
+</resources>
