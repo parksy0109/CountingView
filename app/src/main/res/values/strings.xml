@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CountingView</string>
+    <string name="str_zero">0</string>
+    <string name="initialize">초기화</string>
+    <string name="str_counting">카운팅</string>
+    <string name="str_input">입력</string>
+    <string name="str_speed_ms">속도(ms)</string>
+</resources>
