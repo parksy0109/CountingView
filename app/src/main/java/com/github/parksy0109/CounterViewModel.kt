@@ -14,7 +14,7 @@ class CounterViewModel: ViewModel() {
     var increaseSpeed: Long = 1000
 
     init {
-        _currentCount.value = 0
+        _currentCount.value = 1988
     }
 
     fun increaseCount() {
@@ -38,7 +38,7 @@ class CounterViewModel: ViewModel() {
 
     companion object {
         const val TAG = "CounterViewModel"
-        const val MAX_VALUE = 999
+        const val MAX_VALUE = 9999
     }
 
 }

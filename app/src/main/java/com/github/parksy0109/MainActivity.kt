@@ -85,6 +85,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "카운터 최대 값에 도달했습니다.",Toast.LENGTH_SHORT).show()
             }
             val toNumberData = it.toNumberData()
+            binding.tvThousands.text = toNumberData.thousands.toString()
             binding.tvHundreds.text = toNumberData.hundreds.toString()
             binding.tvTens.text = toNumberData.tens.toString()
             binding.tvUnits.text = toNumberData.units.toString()
