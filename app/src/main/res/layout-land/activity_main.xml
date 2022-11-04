@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_initialize"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@drawable/ripple_initialize_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                style="@style/shadow_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/initialize"
+                android:textColor="#FAF9F9" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_counting"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@id/rl_initialize"
+            android:background="@drawable/ripple_counting_background"
+            android:layout_width="match_parent"
+            android:layout_height="60sp">
+
+            <TextView
+                style="@style/shadow_font"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/str_counting"
+                android:textColor="#FAF9F9" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_first_line"
+            android:layout_below="@id/rl_counting"
+            android:background="#B9B9B9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:id="@+id/ll_increase_speed"
+            android:layout_below="@id/view_first_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/str_speed_ms"
+                android:fontFamily="@font/cookierun_regular"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_speed"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:fontFamily="@font/cookierun_regular"
+                android:hint="@string/str_input"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_second_line"
+            android:layout_below="@id/ll_increase_speed"
+            android:background="#B9B9B9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_below="@id/view_second_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_counter_background"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tv_hundreds"
+                        android:textSize="100sp"
+                        android:textColor="@color/black"
+                        android:text="@string/str_zero"
+                        android:fontFamily="@font/ds_digib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_counter_background"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tv_tens"
+                        android:textSize="100sp"
+                        android:textColor="@color/black"
+                        android:text="@string/str_zero"
+                        android:fontFamily="@font/ds_digib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_counter_background"
+                    android:padding="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tv_units"
+                        android:textSize="100sp"
+                        android:textColor="@color/black"
+                        android:text="@string/str_zero"
+                        android:fontFamily="@font/ds_digib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
