@@ -45,7 +45,9 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                     p0?.let {
-                        counterViewModel.increaseSpeed = it.toString().toLong()
+                        if(p0.isNotEmpty() && p0.isNotBlank()){
+                            counterViewModel.increaseSpeed = it.toString().toLong()
+                        }
                     }
                 }
 
