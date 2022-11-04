@@ -1,7 +1,7 @@
 Simple Counting Machine Android Application
 ==================
 
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/></a>
+<img src="https://img.shields.io/static/v1?label=Android&message=ViewBinding&color=ff69b4"/> <img src="https://img.shields.io/static/v1?label=Android&message=ViewModel&color=blueviolet"/>
 
 🎉 A Simple Counting Machine Using ViewModel
 
